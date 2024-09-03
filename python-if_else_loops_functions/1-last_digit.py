@@ -15,6 +15,6 @@ else:
     if ld > 5:
         print(f"{str1} {number} is {ld} {str2}")
     elif ld == 0: 
-        print(f"{str1} {number} is {ld} and is zero")
+        print(f"{str1} {number} is {ld} and is 0")
     else:
         print(f"{str1} {number} is {ld} {str3}")
