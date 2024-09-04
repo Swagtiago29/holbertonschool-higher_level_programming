@@ -1,4 +1,5 @@
 #!/usr/bin/python3
-def add(a, b):
-    x = a ^ b
+def pow(a, b):
+    for b in range(0, b):
+        x = a * a
     return x
