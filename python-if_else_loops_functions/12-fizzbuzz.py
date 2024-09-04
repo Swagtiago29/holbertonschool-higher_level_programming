@@ -5,8 +5,8 @@ def fizzbuzz():
             if i % 5 == 0:
                 print("FizzBuzz", end=' ')
             else:
-                print("Buzz", end=' ')
+                print("Fizz", end=' ')
         elif i % 5 == 0:
-            print("Fizz", end=' ')
+            print("Buzz", end=' ')
         else:
             print("{}".format(i), end=' ')
