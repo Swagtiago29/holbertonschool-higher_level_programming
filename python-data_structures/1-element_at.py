@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 def element_at(my_list, idx):
-    le = len(my_list)
+    le = len(my_list) - 1
     if idx > le:
         print("None1")
     elif idx < 0:
