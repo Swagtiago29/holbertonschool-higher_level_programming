@@ -6,4 +6,4 @@ def no_c(my_string):
             str += char
         else:
             pass
-    return(str)
+    return str
