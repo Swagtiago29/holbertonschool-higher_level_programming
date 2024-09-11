@@ -1,4 +1,4 @@
-#!/usr/bin/python
+#!/usr/bin/python3
 def square_matrix_simple(matrix=[]):
     niu_matrix = [i[:] for i in matrix]
     for row in range(len(matrix)):
