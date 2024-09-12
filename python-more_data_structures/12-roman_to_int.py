@@ -8,18 +8,19 @@ def checks(romano):
     if 'L' == romano: return 50
     if 'D' == romano: return 500
 def roman_to_int(roman_string):
-    x = 0
-    for i in range(len(roman_string)):
-        if len(roman_string) == 1:
-            return checks(roman_string[i])
-        elif len(roman_string) > i + 1:
-                if checks(roman_string[i]) > checks(roman_string[i + 1]):
-                    x += checks(roman_string[i])
-                elif checks(roman_string[i]) == checks(roman_string[i + 1]):
-                    x += checks(roman_string[i])
-                else:
-                    x -= checks(roman_string[i])
-        elif len(roman_string) == i + 1:
-            roman_string[i] <= roman_string[i - 1]
-            x += checks(roman_string[i])
-    return x
+    if roman_string:
+        x = 0
+        for i in range(len(roman_string)):
+            if len(roman_string) == 1:
+                return checks(roman_string[i])
+            elif len(roman_string) > i + 1:
+                    if checks(roman_string[i]) > checks(roman_string[i + 1]):
+                        x += checks(roman_string[i])
+                    elif checks(roman_string[i]) == checks(roman_string[i + 1]):
+                        x += checks(roman_string[i])
+                    else:
+                        x -= checks(roman_string[i])
+            elif len(roman_string) == i + 1:
+                roman_string[i] <= roman_string[i - 1]
+                x += checks(roman_string[i])
+        return x
