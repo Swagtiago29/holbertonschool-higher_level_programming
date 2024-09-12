@@ -24,3 +24,4 @@ def roman_to_int(roman_string):
                 roman_string[i] <= roman_string[i - 1]
                 x += checks(roman_string[i])
         return x
+    return 0
