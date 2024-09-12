@@ -8,5 +8,5 @@ def safe_print_list(my_list=[], x=0):
             else:
                 print("{:d}".format(my_list[i]), end='')
     except IndexError:
-            print()
+            print(/n,end='')
             return i
