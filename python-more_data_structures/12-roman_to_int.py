@@ -8,7 +8,7 @@ def checks(romano):
     if 'L' == romano: return 50
     if 'D' == romano: return 500
 def roman_to_int(roman_string):
-    if roman_string: 
+    if roman_string and isinstance(roman_string, str):
         x = 0
         for i in range(len(roman_string)):
             if len(roman_string) == 1:
