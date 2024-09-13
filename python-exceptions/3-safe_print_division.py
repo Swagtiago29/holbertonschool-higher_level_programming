@@ -4,10 +4,9 @@ def safe_print_division(a, b):
         c = a / b
         return c
     except ZeroDivisionError:
-        c = None
+        return None
     finally:
         if c is None:
             print("Inside Result: None")
         else:
             print("Inside Result: {:.1f}".format(c))
-    return c
