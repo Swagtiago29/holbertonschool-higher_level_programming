@@ -6,6 +6,7 @@ square.py
 This module defines a Square class that represents a square shape.
 """
 
+
 class Square:
     """A class to represent a square.
 
