@@ -3,7 +3,7 @@
 """
 Module: square
 This module defines a class that represents a square and provides methods
-to calculate its area.
+to calculate its area and print a visual representation of the square.
 """
 
 
@@ -11,8 +11,7 @@ class Square:
     """Represents a square with a specified size.
 
     Attributes:
-        __size (int): The size of the square's side.
-        Must be a non-negative integer.
+        __size (int): The size of the square's side. Must be a non-negative integer.
     """
 
     def __init__(self, size=0):
@@ -67,8 +66,21 @@ class Square:
             int: The area of the square, calculated as size * size.
         """
         return self.__size * self.__size
-    
+
     def my_print(self):
+        """Prints a visual representation of the square using the '#' character.
+
+        If the size of the square is greater than 0, it prints a square
+        of '#' characters. The square will have dimensions of size x size.
+        
+        If the size is 0, it prints an empty line.
+
+        Example:
+            If the size is 3, the output will be:
+            ###
+            ###
+            ###
+        """
         if self.__size != 0:
             for i in range(self.__size):
                 for j in range(self.__size):
