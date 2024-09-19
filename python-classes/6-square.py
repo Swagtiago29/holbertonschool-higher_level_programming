@@ -23,7 +23,7 @@ class Square:
         
         This method validates the provided size and position. It ensures that 
         the size is a non-negative integer and that position is a tuple of 
-        two positive integers. If the validations are successful, the size 
+        two non-negative integers. If the validations are successful, the size 
         and position are assigned to the instance variables.
         """
         if isinstance(position, tuple):
@@ -107,11 +107,14 @@ class Square:
         If the size of the square is greater than 0, it prints a square
         of '#' characters. The square will have dimensions of size x size.
 
-        If the size is 0, it prints an empty line.
+        If the size is 0, it prints an empty line. The square is positioned 
+        according to the __position attribute, which determines how many 
+        spaces to indent and how many new lines to print before the square.
         """
         if self.__size != 0:
+            print('\n' * self.__position[1], end='')  # Moves down by the y-coordinate
             for i in range(self.__size):
-                print(' ' * self.__position[0], end='')
+                print(' ' * self.__position[0], end='')  # Moves right by the x-coordinate
                 for j in range(self.__size):
                     if j != self.__size - 1:
                         print("#", end='')
