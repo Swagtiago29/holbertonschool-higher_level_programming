@@ -112,9 +112,9 @@ class Square:
         spaces to indent and how many new lines to print before the square.
         """
         if self.__size != 0:
-            print('\n' * self.__position[1], end='')  # Moves down by the y-coordinate
+            print('\n' * self.__position[1], end='')
             for i in range(self.__size):
-                print(' ' * self.__position[0], end='')  # Moves right by the x-coordinate
+                print(' ' * self.__position[0], end='')
                 for j in range(self.__size):
                     if j != self.__size - 1:
                         print("#", end='')
