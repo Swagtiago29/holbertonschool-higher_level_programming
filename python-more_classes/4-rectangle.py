@@ -23,6 +23,7 @@ class Rectangle:
         area(): Calculates and returns the area of the rectangle.
         perimeter(): Calculates and returns the perimeter of the rectangle.
         __str__(): Returns a string representation of the rectangle using '#'.
+        __del__(): Prints a message when the instance is deleted.
     """
 
     def __init__(self, width=0, height=0):
@@ -146,3 +147,6 @@ class Rectangle:
             str: A string that represents the rectangle object.
         """
         return f"Rectangle({self.width}, {self.height})"
+    def __del__(self):
+        """Prints a message when an instance of Rectangle is deleted."""
+        print("Bye rectangle...")
