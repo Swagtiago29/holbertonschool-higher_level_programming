@@ -2,7 +2,7 @@
 """
 Module: Inheritance Checking
 
-This module provides a function to check if an object is an instance 
+This module provides a function to check if an object is an instance
 of a class that inherits (directly or indirectly) from a specified class,
 excluding direct instances of that class.
 """
@@ -10,7 +10,7 @@ excluding direct instances of that class.
 
 def inherits_from(obj, a_class):
     """
-    Check if an object is an instance of a class that inherits 
+    Check if an object is an instance of a class that inherits
     (directly or indirectly) from the specified class.
 
     Parameters
@@ -23,9 +23,9 @@ def inherits_from(obj, a_class):
     Returns
     -------
     bool
-        True if the object is an instance of a class that inherited 
+        True if the object is an instance of a class that inherited
         from the specified class, otherwise False.
     """
-    if isinstance(obj, a_class) and type(obj) is not a_class: 
+    if isinstance(obj, a_class) and type(obj) is not a_class:
         return True
     return False
