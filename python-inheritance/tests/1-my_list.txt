@@ -15,6 +15,6 @@
 
 >>> my_list3 = [-30, -10, -77, -58]
 >>> my_list3.append(-41)
->>> MyList(my_list3)
->>> print my_list3
+>>> mauricio = MyList(my_list3)
+>>> print(mauricio)
 [-10, -30, -41, -58, -77]
