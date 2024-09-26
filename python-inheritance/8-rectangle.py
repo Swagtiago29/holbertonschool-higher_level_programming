@@ -5,6 +5,7 @@ This module imports the BaseGeometry class from another module and
 provides a Rectangle class that validates its dimensions.
 """
 
+
 BaseGeometry = __import__('7-base_geometry').BaseGeometry
 
 class Rectangle(BaseGeometry):
