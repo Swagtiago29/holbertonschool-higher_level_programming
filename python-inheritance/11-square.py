@@ -31,7 +31,7 @@ class Square(Rec):
         self.integer_validator("size", size)
         super().__init__(size, size)
         self.__size = size
-    
+
     def __str__(self):
         """Returns a string representation of the Square instance.
 
@@ -39,7 +39,7 @@ class Square(Rec):
             str: A string in the format "[Square] size/size".
         """
         return f"[Square] {self.__size}/{self.__size}"
-    
+
     def area(self):
         """Calculates the area of the square.
 
