@@ -8,6 +8,7 @@ provides a Rectangle class that validates its dimensions.
 
 BaseGeometry = __import__('7-base_geometry').BaseGeometry
 
+
 class Rectangle(BaseGeometry):
     """Represents a rectangle and validates its dimensions.
 
