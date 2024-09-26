@@ -61,7 +61,7 @@ class BaseGeometry:
         ValueError
             If value is an integer but less than or equal to 0.
         """
-        if type(value) == int:
+        if type(value) is int:
             if value <= 0:
                 raise ValueError(f"{name} must be greater than 0")
         else:
