@@ -7,3 +7,10 @@
 >>> empty_list = MyList([])
 >>> empty_list.print_sorted()
 []
+
+>>> my_list2 = MyList(['glasses', 'cup', 'coffe', 'screen'])
+>>> print(my_list2)
+['coffe', 'cup', 'glasses', 'screen']
+
+>>> my_list3.append(10)
+>>> print(my_list3)
