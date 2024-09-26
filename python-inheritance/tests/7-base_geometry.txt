@@ -41,7 +41,7 @@ Traceback (most recent call last):
 ...
 TypeError: age must be an integer
 
-Geometry.integer_validator("age", True)
+>>> bg.integer_validator("age", True)
 Traceback (most recent call last):
 ...
 TypeError: age must be an integer
