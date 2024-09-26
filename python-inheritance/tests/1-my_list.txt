@@ -12,3 +12,7 @@
 >>> my_list2 = MyList(['glasses', 'cup', 'coffe', 'screen'])
 >>> print(my_list2)
 ['glasses', 'cup', 'coffe', 'screen']
+
+>>> my_list3 = MyList([-30, -10, -77, -58])
+>>> my_list3.append(-41)
+[-10, -30, -41, -58, -77]
