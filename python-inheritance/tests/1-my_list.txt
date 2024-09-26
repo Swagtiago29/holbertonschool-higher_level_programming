@@ -13,8 +13,6 @@
 >>> print(my_list2)
 ['glasses', 'cup', 'coffe', 'screen']
 
->>> my_list3 = [-30, -10, -77, -58]
->>> my_list3.append(-41)
->>> mauricio = MyList(my_list3)
->>> print(mauricio)
+>>> my_list3 = MyList([-30, -10, -77, -58])
+>>> my_list3.print_sorted()
 [-10, -30, -41, -58, -77]
