@@ -1,7 +1,8 @@
 #!/usr/bin/python3
 
 """
-This module provides a function to read and print the contents of a specified text file.
+This module provides a function to read and print the contents of a specified
+text file.
 
 Usage:
     Call the `read_file` function with the filename as an argument.
@@ -9,6 +10,7 @@ Usage:
 Example:
     read_file("example.txt")
 """
+
 
 def read_file(filename=""):
     """
