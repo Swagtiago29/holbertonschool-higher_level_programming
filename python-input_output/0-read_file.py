@@ -1,4 +1,5 @@
 #!/usr/bin/python3
+
 def read_file(filename=""):
     """
     Read and print the contents of a text file.
@@ -6,6 +7,10 @@ def read_file(filename=""):
     Args:
         filename (str): The name of the file to read. Defaults to an empty string,
                         which may lead to an error if no filename is provided.
+
+    Raises:
+        FileNotFoundError: If the specified file does not exist.
+        Exception: For any other errors encountered while opening or reading the file.
 
     Example:
         read_file("example.txt")
