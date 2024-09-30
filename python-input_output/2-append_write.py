@@ -16,7 +16,7 @@ def append_write(filename="", text=""):
     Append the specified text to a file.
 
     Args:
-        filename (str): The name of the file where the text will be appended. 
+        filename (str): The name of the file where the text will be appended.
                          If the file does not exist, it will be created.
         text (str): The text to append to the file.
 
