@@ -10,12 +10,13 @@ Example:
     write_file("example.txt", "Hello, World!")
 """
 
+
 def write_file(filename="", text=""):
     """
     Write the specified text to a file.
 
     Args:
-        filename (str): The name of the file where the text will be written. 
+        filename (str): The name of the file where the text will be written.
                          If the file does not exist, it will be created.
         text (str): The text to write to the file.
 
