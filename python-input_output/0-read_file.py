@@ -1,3 +1,4 @@
+#!/usr/bin/python3
 def read_file(filename=""):
     """
     Read and print the contents of a text file.
