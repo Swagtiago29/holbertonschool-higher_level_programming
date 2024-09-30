@@ -10,12 +10,13 @@ Example:
     my_obj = load_from_json_file("input.json")
 """
 
+
 def load_from_json_file(filename):
     """
     Load a Python object from a JSON file.
 
     Args:
-        filename (str): The name of the file from which to read the JSON object.
+        filename (str): The name of the file from which to read the JSON obj.
 
     Returns:
         object: The Python object represented by the JSON data in the file.
