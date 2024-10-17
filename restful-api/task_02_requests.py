@@ -2,7 +2,7 @@
 import requests
 import csv
 
-def fetch_and_print():
+def fetch_and_print_posts():
       req = requests.get('https://jsonplaceholder.typicode.com/posts')
       print(f"Status Code: {req.status_code}")
       if req.status_code == 200:
@@ -10,7 +10,7 @@ def fetch_and_print():
             for posts in resp:
                   print(posts['title'])
             
-#fetch_and_print()
+#fetch_and_print_posts()
 
 def fetch_and_save_posts():
       req = requests.get('https://jsonplaceholder.typicode.com/posts')
