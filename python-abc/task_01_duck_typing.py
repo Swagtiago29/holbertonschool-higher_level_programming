@@ -11,7 +11,6 @@ class Shape(ABC):
         pass
 class Circle(Shape):
     def __init__(self, radius):
-        if radius and radius != 0:
             self.radius = radius
     def area(self):
         return math.pi * (self.radius ** 2)
@@ -19,9 +18,7 @@ class Circle(Shape):
         return math.pi * 2 * self.radius
 class Rectangle(Shape):
     def __init__(self, width, height):
-        if width and width != 0:
             self.width = width
-        if height and height != 0:
             self.height = height
     def area(self):
         return self.height * self.width
