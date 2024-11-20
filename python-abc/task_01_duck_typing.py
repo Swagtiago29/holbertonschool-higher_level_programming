@@ -11,9 +11,7 @@ class Shape(ABC):
         pass
 class Circle(Shape):
     def __init__(self, radius):
-            if radius < 0:
-                self.radius = - radius
-            self.radius = radius
+                self.radius = abs(radius)
     def area(self):
         return math.pi * (self.radius ** 2)
     def perimeter(self):
